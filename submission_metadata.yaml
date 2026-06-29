@@ -1,0 +1,86 @@
+# Redrob Hackathon — Submission Metadata
+#
+# Copy this file to your repo root as `submission_metadata.yaml` and fill it in.
+# The fields here should match what you submit via the portal at upload time.
+# Stage 3 review uses this file to verify your portal metadata.
+
+# ============================================================================
+# Team identity
+# ============================================================================
+team_name: "Md Altamash Rizwi"  # Used in leaderboard and announcements
+
+primary_contact:
+  name: "Md Altamash Rizwi"
+  email: "rizzzaltamash@gmail.com"   # Used for all organizer communication
+  phone: "+91-6206449674"        # Used for top-50 / top-10 outreach
+
+team_members:
+  - name: "Md Altamash Rizwi"
+    email: "rizzzaltamash@gmail.com"
+    role: "AI Engineer"          # Optional, e.g. "Team Lead", "Backend", "Data"
+  # Add more members as needed; solo participants list just one member
+
+# ============================================================================
+# Code and reproducibility
+# ============================================================================
+github_repo: "https://github.com/rizzz-altamash/Apex-Recruiter-AI"
+# Required. Must be reachable. Private repos OK if you can grant organizer
+# access at Stage 3 (the email to add will be communicated then).
+
+sandbox_link: "https://colab.research.google.com/drive/1mCeAVgqv5lYo1NCTjavvT2Ur3G0o6yIV?usp=sharing"
+# Required. A working hosted environment where the ranker can be run on a small
+# candidate sample. See Section 10.5 of submission_spec.md for acceptable
+# platforms (HuggingFace Spaces, Streamlit Cloud, Replit, Colab, Docker, Binder).
+
+reproduce_command: "python stage2.py"
+# The single command that produces submission.csv from candidates.jsonl.
+# Should run end-to-end within 5 minutes on CPU with 16GB RAM and no network.
+
+# ============================================================================
+# Compute environment
+# ============================================================================
+compute:
+  platform: "Local Windows Machine"             # Or: "AWS EC2 c5.4xlarge", "Local Linux box", etc.
+  cpu_cores: 16                                 # Number of CPU cores used
+  ram_gb: 16                                    # Available RAM in GB
+  python_version: "3.14.4"                      # python --version
+  os: "Windows 11"                              # Or "Ubuntu 22.04 LTS", etc.
+  uses_gpu_for_inference: false                 # Must be false — see compute constraints
+  has_network_during_ranking: false             # Must be false — no API calls during ranking
+  pre_computation_required: true                # true if you pre-compute embeddings or train models offline
+  pre_computation_time_minutes: 12              # Approximate, if applicable
+
+# ============================================================================
+# AI tools declaration
+# ============================================================================
+# Transparency only — declared use is NOT penalized. Be honest. Stage 5 interview
+# may verify these declarations against your code; declarations that contradict
+# your code or your interview are flagged.
+ai_tools_used:
+  - "Gemini"        # e.g. for architecture discussion, code review
+  # Other options: "ChatGPT", "Cursor", "Gemini", "Codeium", "Other", "None"
+
+ai_usage_summary: |
+  - Used Gemini to discuss the architecture for bypassing the 5-minute CPU constraint.
+  - Gemini assisted in writing a memory-safe Python chunking script (invoking gc.collect) to prevent RAM crashes when generating embeddings for 100K profiles. 
+  - No LLMs were used for real-time candidate reasoning generation, and no candidate data was fed to any LLM.
+
+# ============================================================================
+# Approach summary (optional but recommended)
+# ============================================================================
+methodology_summary: |
+  I engineered a Two-Stage Hybrid Information Retrieval pipeline. 
+  Stage 1 (Offline Pre-computation) chunks the 100K JSONL file, deterministically drops 45K honeypots, flattens candidate career histories, and generates 384-dimensional dense vectors using all-MiniLM-L6-v2 into a highly compressed FAISS index. 
+  Stage 2 (Real-Time Sandbox Execution) executes instantly using a Multi-Modal Fusion Formula: Final Score = Semantic Base * Keyword Heuristic * Behavioral Multiplier. 
+  I adjust the baseline AI text match based on explicit job titles to catch keyword-stuffers, and then multiply it by the recruiter response rate to penalize inactive profiles. This ensures only relevant, responsive candidates reach the top, processing all 100K candidates locally in just ~9 seconds on a standard CPU.
+  Runtime is ~9 seconds for 100K candidates on CPU.
+
+# ============================================================================
+# Declarations
+# ============================================================================
+declarations:
+  read_submission_spec: true        # I have read submission_spec.md in full
+  code_is_original_work: true       # My code is my team's original work (using AI as a tool is fine)
+  no_collusion: true                # I have not coordinated my submission with other teams
+  honeypot_check_done: true         # OPTIONAL — set true if you explicitly checked for honeypots in your ranking
+  reproduction_tested: true         # I have tested that my reproduce_command runs end-to-end

@@ -1,0 +1,34 @@
+candidate_id,rank,score,reasoning
+CAND_0000031,1,0.6911394069194794,Recommendation Systems Engineer with 6.0 yrs exp. Base semantic match adjusted by 91% response rate.
+CAND_0000023,2,0.5671804996728897,Software Engineer with 3.7 yrs exp. Base semantic match adjusted by 56% response rate.
+CAND_0000045,3,0.5448667030334473,Project Manager with 12.2 yrs exp. Base semantic match adjusted by 62% response rate.
+CAND_0000032,4,0.523437180519104,.NET Developer with 8.1 yrs exp. Base semantic match adjusted by 69% response rate.
+CAND_0000010,5,0.5205890655517579,Data Engineer with 4.6 yrs exp. Base semantic match adjusted by 40% response rate.
+CAND_0000001,6,0.5190288619995118,Backend Engineer with 6.9 yrs exp. Base semantic match adjusted by 34% response rate.
+CAND_0000002,7,0.511608937740326,Operations Manager with 12.5 yrs exp. Base semantic match adjusted by 28% response rate.
+CAND_0000047,8,0.508211696624756,Project Manager with 2.4 yrs exp. Base semantic match adjusted by 39% response rate.
+CAND_0000027,9,0.5077004270553589,DevOps Engineer with 3.9 yrs exp. Base semantic match adjusted by 57% response rate.
+CAND_0000011,10,0.5047634582519531,QA Engineer with 2.0 yrs exp. Base semantic match adjusted by 56% response rate.
+CAND_0000037,11,0.5047391643524171,Business Analyst with 14.3 yrs exp. Base semantic match adjusted by 78% response rate.
+CAND_0000019,12,0.5044717731475831,Project Manager with 6.5 yrs exp. Base semantic match adjusted by 34% response rate.
+CAND_0000021,13,0.5014998072385788,Project Manager with 14.5 yrs exp. Base semantic match adjusted by 49% response rate.
+CAND_0000048,14,0.5005198109149933,Mobile Developer with 9.7 yrs exp. Base semantic match adjusted by 65% response rate.
+CAND_0000015,15,0.4974176101684571,Software Engineer with 5.4 yrs exp. Base semantic match adjusted by 32% response rate.
+CAND_0000038,16,0.49605204105377204,Java Developer with 6.7 yrs exp. Base semantic match adjusted by 20% response rate.
+CAND_0000012,17,0.489462516784668,Operations Manager with 1.1 yrs exp. Base semantic match adjusted by 16% response rate.
+CAND_0000050,18,0.47810184860229493,Business Analyst with 13.5 yrs exp. Base semantic match adjusted by 42% response rate.
+CAND_0000036,19,0.47243736743927006,Project Manager with 11.3 yrs exp. Base semantic match adjusted by 40% response rate.
+CAND_0000035,20,0.4716311466693879,Full Stack Developer with 4.3 yrs exp. Base semantic match adjusted by 34% response rate.
+CAND_0000008,21,0.4667915153503418,Operations Manager with 3.6 yrs exp. Base semantic match adjusted by 42% response rate.
+CAND_0000014,22,0.4502332305908203,Frontend Engineer with 8.4 yrs exp. Base semantic match adjusted by 80% response rate.
+CAND_0000034,23,0.44023450493812566,Business Analyst with 14.5 yrs exp. Base semantic match adjusted by 15% response rate.
+CAND_0000049,24,0.43148224139213565,Mechanical Engineer with 11.8 yrs exp. Base semantic match adjusted by 59% response rate.
+CAND_0000009,25,0.4144487031698227,Mechanical Engineer with 11.0 yrs exp. Base semantic match adjusted by 53% response rate.
+CAND_0000007,26,0.41301318204402926,Civil Engineer with 5.5 yrs exp. Base semantic match adjusted by 62% response rate.
+CAND_0000044,27,0.40467066764831544,Frontend Engineer with 5.7 yrs exp. Base semantic match adjusted by 66% response rate.
+CAND_0000022,28,0.401912666797638,Mechanical Engineer with 1.1 yrs exp. Base semantic match adjusted by 27% response rate.
+CAND_0000046,29,0.3988799296617508,Mechanical Engineer with 7.8 yrs exp. Base semantic match adjusted by 41% response rate.
+CAND_0000013,30,0.39779849243164067,Civil Engineer with 1.1 yrs exp. Base semantic match adjusted by 28% response rate.
+CAND_0000025,31,0.3891718178987503,Frontend Engineer with 7.3 yrs exp. Base semantic match adjusted by 74% response rate.
+CAND_0000018,32,0.3801721916198731,Frontend Engineer with 6.6 yrs exp. Base semantic match adjusted by 16% response rate.
+CAND_0000020,33,0.3691207438707352,Mechanical Engineer with 6.3 yrs exp. Base semantic match adjusted by 55% response rate.
