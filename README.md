@@ -6,7 +6,7 @@
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Python-3.14.4-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
   <img src="https://img.shields.io/badge/SentenceTransformers-all--MiniLM--L6--v2-2E8B57?style=for-the-badge" alt="Sentence Transformers" />
   <img src="https://img.shields.io/badge/FAISS-IndexFlatIP-FF6B35?style=for-the-badge" alt="FAISS" />
   <img src="https://img.shields.io/badge/CPU-Only-red?style=for-the-badge" alt="CPU Only" />
