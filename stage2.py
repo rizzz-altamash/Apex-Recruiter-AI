@@ -72,9 +72,13 @@ for i, res in enumerate(top_results):
 submission_df = pd.DataFrame(top_results)
 submission_df = submission_df[['candidate_id', 'rank', 'score', 'reasoning']]
 
-# Final submission file 
-output_filename = "team_Md_Altamash_Rizwi.csv"
+# Final submission file (CSV)
+output_filename = "team_cannixaro.csv"
 submission_df.to_csv(output_filename, index=False)
+
+# Final submission file (XLSX)
+output_filename = "team_cannixaro.xlsx"
+submission_df.to_excel(output_filename, index=False)
 
 print(f"✅ Production Pipeline Complete! Ranked {len(submission_df)} valid candidates.")
 print(f"📄 Output saved to: {output_filename}")
