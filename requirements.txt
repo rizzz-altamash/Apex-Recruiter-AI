@@ -1,0 +1,5 @@
+numpy
+pandas
+openpyxl
+faiss-cpu
+sentence-transformers
