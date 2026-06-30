@@ -16,7 +16,7 @@
 
 <div align="center">
 
-<h3>A Two-Stage Hybrid Information Retrieval Pipeline for Intelligent Candidate Discovery & Ranking</h3>
+<h3>A 2-Stage Hybrid Information Retrieval Pipeline for Candidate Discovery & Ranking</h3>
 <h4>Built for the Redrob Intelligent Candidate Discovery & Ranking Challenge</h4>
 
 </div>
