@@ -1,5 +1,5 @@
 # --- Build Offline Index --- 
-# stage1.py 
+# -------- stage1.py -------- 
 import json
 import pandas as pd
 import numpy as np
@@ -17,7 +17,7 @@ index = faiss.IndexFlatIP(dimension)
 
 TRAP_TITLES = ['marketing', 'hr', 'sales', 'accountant', 'customer support', 'graphic designer', 'content writer']
 
-print("Reading and chunking 500MB JSONL file...")
+print("Reading and chunking 100K JSONL file...")
 start_time = time.time()
 
 all_metadata = []
