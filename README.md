@@ -172,7 +172,8 @@ Since embeddings are already precomputed, online execution finishes in only a fe
 ├── candidate_vectors.faiss       # FAISS vector index
 ├── candidate_metadata.pkl        # Candidate metadata
 │
-├── team_Md_Altamash_Rizwi.csv    # Final submission
+├── team_cannixaro.csv            # Final submission
+├── team_cannixaro.xlsx           # Final submission
 │
 ├── requirements.txt
 └── README.md
@@ -186,7 +187,8 @@ Since embeddings are already precomputed, online execution finishes in only a fe
 |------|-------------|
 | `candidate_vectors.faiss` | Stores normalized candidate embeddings using FAISS |
 | `candidate_metadata.pkl` | Stores metadata required during ranking |
-| `team_Md_Altamash_Rizwi.csv` | Final ranked submission |
+| `team_cannixaro.xlsx` | Final ranked submission (XLSX) |
+| `team_cannixaro.csv` | Final ranked submission (CSV) |
 
 ---
 
@@ -234,7 +236,7 @@ E["candidate_metadata.pkl"] --> F
 F --> G["Top-150 Semantic Matches"]
 G --> H["Hybrid Scoring"]
 H --> I["Top-100 Ranked Candidates"]
-I --> J["team_Md_Altamash_Rizwi.csv"]
+I --> J["team_cannixaro.csv"]
 
 end
 ```
@@ -594,7 +596,7 @@ This design keeps inference lightweight while satisfying the strict runtime requ
                Generate Reasoning Strings
                             │
                             ▼
-               team_Md_Altamash_Rizwi.csv
+                   team_cannixaro.csv
 ```
 
 ---
@@ -686,7 +688,7 @@ Your implementation uses **exact inner-product search**, not approximate nearest
 The pipeline retrieves
 
 ```text
-Top-150
+Top 150
 ```
 
 most semantically similar candidates.
@@ -916,7 +918,11 @@ H --> I["Export CSV"]
 The submission is exported as
 
 ```text
-team_Md_Altamash_Rizwi.csv
+team_cannixaro.csv
+```
+
+```text
+team_cannixaro.xlsx
 ```
 
 with the following columns.
@@ -966,7 +972,7 @@ To eliminate this bottleneck, the pipeline separates expensive computation from 
 | Stage | Responsibility |
 |--------|----------------|
 | **Stage 1** | Offline preprocessing, semantic document construction, embedding generation, and FAISS indexing |
-| **Stage 2** | Job Description embedding, candidate retrieval, hybrid scoring, and CSV generation |
+| **Stage 2** | Job Description embedding, candidate retrieval, hybrid scoring, and CSV/XLSX generation |
 
 This separation allows inference to complete in only a few seconds.
 
@@ -1201,17 +1207,21 @@ candidate_metadata.pkl
 python stage2.py
 ```
 
-Generated output:
+Generated outputs:
 
 ```text
-team_Md_Altamash_Rizwi.csv
+team_cannixaro.csv
+```
+
+```text
+team_cannixaro.xlsx
 ```
 
 ---
 
 # 📄 Output Format
 
-The generated CSV contains:
+The generated CSV/XLSX contains:
 
 | Column | Description |
 |----------|-------------|
